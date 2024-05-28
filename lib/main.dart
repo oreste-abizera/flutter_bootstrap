@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bootstrap/logger.dart';
 
 void main() {
+  // Init
+  logger.i('Starting main...');
+  WidgetsFlutterBinding.ensureInitialized();
+  // Run
+  logger.i('Starting app...');
   runApp(const MyApp());
 }
 
